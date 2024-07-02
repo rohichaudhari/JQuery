@@ -1,0 +1,15 @@
+$(function(){
+    $("button").click(function(){
+        $(".text").animate({left:"1400px"})
+        $(".text").animate({top:"500px"})
+        $(".text").animate({left:"-10px"})
+        $(".text").animate({top:"-0px"},1000,function(){
+            $(".text").css({
+                "font-size":"50px",
+                "width":"fit-content",
+                "height":"fit-content",
+                "background-color":"red"
+            })
+        })
+    })
+})
